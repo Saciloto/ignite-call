@@ -1,0 +1,8 @@
+{
+    "editor.codeActionsOnSave": {
+    
+    },
+    "[prisma]": {
+        "editor.formatOnSave": true
+    },
+}
