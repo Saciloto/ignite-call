@@ -5,7 +5,7 @@ import { AuthError, ConnectBox, ConnectItem } from './styles'
 import { signIn, useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 
-export default function Register() {
+export default function CoennectCalendar() {
   const session = useSession()
   const router = useRouter()
   const hasAuthError = !!router.query.error
@@ -21,7 +21,7 @@ export default function Register() {
         <Heading as="strong">Conecte sua agenda!</Heading>
         <Text>
           Conecte o seu calendário para verificar automaticamente as horas
-          ocupadas e os novos eventos à medada em que são agendados..
+          ocupadas e os novos eventos à medada em que são agendados.
         </Text>
         <MultiStep size={4} currentStep={2} />
       </Header>
