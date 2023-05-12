@@ -15,6 +15,10 @@ export default function CoennectCalendar() {
     await signIn('google')
   }
 
+  async function handleNavigateToNextStep() {
+    await router.push('/register/time-intervals')
+  }
+
   return (
     <Container>
       <Header>
@@ -50,7 +54,11 @@ export default function CoennectCalendar() {
             permissões.
           </AuthError>
         )}
-        <Button type="submit" disabled={!isSignIn}>
+        <Button
+          type="submit"
+          disabled={!isSignIn}
+          onClick={handleNavigateToNextStep}
+        >
           Próximo passo <ArrowRight />
         </Button>
       </ConnectBox>
